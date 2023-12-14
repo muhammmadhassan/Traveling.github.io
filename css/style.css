@@ -81,19 +81,27 @@ h1, h2, h3{
 .btn-primary{
     background-color: #fff;
     border-radius: 10rem;
+    transition: all 0.4s ease-in-out;
+    font-weight: 700;
 }
 
 .btn-primary:hover{
-    background:#ddd ;
+    /* background:#ddd ; */
+    background: #e63946;
+    color: #f4f4f4;
+    font-weight: 700;
 }
 
 .btn-secondary{
     border: 2px solid #f50021;
     border-radius: 1.5em;
+    transition: all 0.4s ease-in-out;
 }
 
 .btn-secondary:hover{
-    background: #fcf3f2;
+    color: #fcf3f2;
+    background: #f50021;
+    /* border: 2px solid transparent; */
 }
 
 
@@ -131,10 +139,12 @@ h1, h2, h3{
 
 .navbar a{
     padding-bottom: 0.13em;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar a:hover{
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f50021;
+    color: #f50021;
 }
 
 .navbar::after{
@@ -263,6 +273,18 @@ h1, h2, h3{
 
 .social-media-links i{
     margin: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.social-media-links .fa-facebook:hover {
+    color: #3b5998; /* Facebook color */
+}
+
+.social-media-links .fa-twitter:hover {
+    color: #00acee; /* Twitter color */
+}
+.social-media-links .fa-instagram:hover {
+    color: #e4405f; /* Instagram color */
 }
 
 /* ########## About Page Styling ########## */
@@ -477,11 +499,18 @@ h1, h2, h3{
     padding: 1em 3em;
     font-size: 1.8rem;
     text-transform: uppercase;
+    border: 2px solid transparent;
     background: #e63946;
+    border-radius: 20px;
     color: #fff;
     outline: none;
-    border: none;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.form-wrapper .form .form-btn:hover{
+    color: #f50021;
+    background: #fff;
+    border: 2px solid #f50021;
 }
 
 
